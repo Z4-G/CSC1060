@@ -9,6 +9,7 @@ public class Temperature_Converter {
         var toConvert = "";
         var typeConvert = "";
         var tempStart = 0.0;
+        var degree = 0;
 
         Scanner temperature = new Scanner(System.in);
         System.out.println("What is the temperature?");
