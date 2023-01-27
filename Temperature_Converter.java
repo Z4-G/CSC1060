@@ -8,7 +8,7 @@ public class Temperature_Converter {
     public static void main(String[] arg){
         var toConvert = "";
         var typeConvert = "";
-        var tempStart = 0.0;
+        float tempStart = 0;
 
         Scanner temperature = new Scanner(System.in);
         System.out.println("What is the temperature?");
@@ -17,7 +17,6 @@ public class Temperature_Converter {
         Scanner tempType = new Scanner(System.in);
         System.out.println("What temperature would you like to convert?");
         toConvert = tempType.nextLine(); //aquires initial temperature unit
-        toConvert = tempType.nextLine();
         toConvert = toConvert.toLowerCase();
 
         Scanner desiredType = new Scanner(System.in);
