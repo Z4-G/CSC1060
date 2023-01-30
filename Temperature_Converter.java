@@ -12,16 +12,16 @@ public class Temperature_Converter {
 
         Scanner temperature = new Scanner(System.in);
         System.out.println("What is the temperature?");
-        tempStart = temperature.nextFloat(); //aquires initial temperature
+        tempStart = temperature.nextFloat(); //acquires initial temperature
         
         Scanner tempType = new Scanner(System.in);
         System.out.println("What temperature would you like to convert?");
-        toConvert = tempType.nextLine(); //aquires initial temperature unit
+        toConvert = tempType.nextLine(); //acquires initial temperature unit
         toConvert = toConvert.toLowerCase();
 
         Scanner desiredType = new Scanner(System.in);
         System.out.println("What do you want to convert to?"); 
-        typeConvert = desiredType.nextLine(); //Aquires desired temperature unit
+        typeConvert = desiredType.nextLine(); //Acquires desired temperature unit
         typeConvert = typeConvert.toLowerCase();
 
 
