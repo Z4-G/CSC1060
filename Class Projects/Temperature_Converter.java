@@ -17,13 +17,15 @@ public class Temperature_Converter {
 
         Scanner temperature = new Scanner(System.in);
         System.out.println("What is the current temperature?");
-        tempStart = temperature.nextFloat(); //acquires initial temperature
+        tempStart = temperature.nextFloat();
         temperature.nextLine();
+         //acquires initial temperature
         
         System.out.println("\nWhat temperature unit would you like to convert?");
         toConvert = temperature.nextLine();
         toConvert = toConvert.toLowerCase();  
         //Acquires intial temerature unit
+
         while (!toConvert.equals("kelvin") && !toConvert.equals("celcius") && !toConvert.equals("fahrenheit")){
             System.out.println("\nPlease enter a valid unit\n");
             toConvert = temperature.nextLine();
@@ -50,7 +52,6 @@ public class Temperature_Converter {
                 var finalValue = tempStart * 1.8 + 32;
                 System.out.println ("\n" + tempStart + " degrees Celcius is " + df.format(finalValue) + " Degrees Fahrenheit.");
             } 
-
          // converts Celcius to Kelvin or Fahrenheit
 
         } else if (toConvert.equals("fahrenheit")){
@@ -61,7 +62,6 @@ public class Temperature_Converter {
                 var finalValue = (tempStart - 32) / 1.8;
                 System.out.println("\n" + tempStart + " degrees Fahrenheit is " + df.format(finalValue) + " Degrees Celcius.");
             }
-
         //Converts fahrenheit to Celcius or Kelvin
 
         } else if (toConvert.equals("kelvin")){
@@ -72,7 +72,6 @@ public class Temperature_Converter {
                 var finalValue = (tempStart - 273) * 1.8 +32;
                 System.out.println("\n" + tempStart + " Degrees Kelvin is " + df.format(finalValue) + " Degrees fahrenheit.");
             }
-
          //Converts Kelvin to Celcius or Fahrenheit
 
         } else {
