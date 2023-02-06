@@ -71,7 +71,7 @@ public class Temperature_Converter {
             }else if (typeConvert.equals("fahrenheit")){
                 var finalValue = (tempStart - 273) * 1.8 +32;
                 System.out.println("\n" + tempStart + " Degrees Kelvin is " + df.format(finalValue) + " Degrees fahrenheit.");
-            }
+            }   
          //Converts Kelvin to Celcius or Fahrenheit
 
         } else {
