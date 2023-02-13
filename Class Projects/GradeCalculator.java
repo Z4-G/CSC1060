@@ -5,8 +5,19 @@ public class GradeCalculator {
         int grade = 0; 
 
         Scanner gradeValue = new Scanner(System.in);
-        System.out.println("Please enter your grade as an interger.");
-        grade = gradeValue.nextInt();
+        /*System.out.println("Please enter your grade as an interger.");
+        grade = gradeValue.nextInt();*/
+
+        do{
+            try{
+                System.out.println("Please enter your grade as an interger.");
+                grade = gradeValue.nextInt();
+            } catch (InputMismatchException e){
+                System.out.println("This input is not valid. Please try again.");
+                grade = gradeValue.nextInt();
+            }
+
+        }while (!(grade >= 0));
 
         while (grade < 0){
             System.out.println("please enter a value greater than -1");
