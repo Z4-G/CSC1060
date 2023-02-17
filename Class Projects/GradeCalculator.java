@@ -2,21 +2,32 @@ import java.util.InputMismatchException;
 import java.util.Scanner; 
 public class GradeCalculator {
     public static void main(String[] args){
-        int grade = 0; 
+        int grade = -1; 
 
         Scanner gradeValue = new Scanner(System.in);
-        /*System.out.println("Please enter your grade as an interger.");
-        grade = gradeValue.nextInt();*/
 
-        do{
+        /*do{
             try{
                 System.out.println("Please enter your grade as an interger.");
+                check = gradeValue.hasNextInt();
                 grade = gradeValue.nextInt();
+                
             } catch (InputMismatchException e){
                 System.out.println("This input is not valid. Please try again.");
-                grade = gradeValue.nextInt();
             }
+        }while (check = false);*/
 
+        do {
+            try{
+                System.out.println("Please enter your grade as an interger.");
+                String input = gradeValue.nextLine();
+                grade = Integer.parseInt(input);
+                //gradeValue.nextLine();
+                
+            } catch (Exception e){
+                System.out.println("This input is not valid. Please try again.");
+                grade = -1;
+            }
         }while (!(grade >= 0));
 
         while (grade < 0){
