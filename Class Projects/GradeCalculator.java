@@ -1,4 +1,3 @@
-import java.util.InputMismatchException;
 import java.util.Scanner; 
 public class GradeCalculator {
     public static void main(String[] args){
@@ -49,5 +48,6 @@ public class GradeCalculator {
         } else if (grade >= 92) {
             System.out.println("Your grade is A");
         }
+        gradeValue.close();
     }
 }

@@ -22,8 +22,6 @@ public class TrianglePrinter{
         fill = triangles.nextLine();
         //gets fill character
 
-
-
         for (int i = 0; i < triangleSize; i++ ){
             for (int j = i+1 ; j <= triangleSize; j++){
                 System.out.print(" ");
@@ -34,5 +32,6 @@ public class TrianglePrinter{
         System.out.println("");
         }
         //draws the triangle
+        triangles.close();
     }
 }
