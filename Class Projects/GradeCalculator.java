@@ -6,16 +6,6 @@ public class GradeCalculator {
 
         Scanner gradeValue = new Scanner(System.in);
 
-        /*do{
-            try{
-                System.out.println("Please enter your grade as an interger.");
-                check = gradeValue.hasNextInt();
-                grade = gradeValue.nextInt();
-                
-            } catch (InputMismatchException e){
-                System.out.println("This input is not valid. Please try again.");
-            }
-        }while (check = false);*/
 
         do {
             try{
