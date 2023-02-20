@@ -1,20 +1,20 @@
 import java.util.Scanner;
-public class cylinder {
+public class CircleCalculation {
     int area = 0;
     double radius = 0;
     int length = 0;
     public static void area(double radius){
         double areaComputed =  radius*radius*Math.PI;
-        System.out.println("\nThe area is " + String.format("%.2f", areaComputed));
+        System.out.println("\nThe area is " + String.format("%.3f", areaComputed));
     }
 
     public static void diameter(double radius){
         double diameterComputed = 2*radius;
-        System.out.println("The diameter is " + String.format("%.2f", diameterComputed));
+        System.out.println("The diameter is " + String.format("%.3f", diameterComputed));
     }
     public static void circumference(double radius){
         double circumferenceComputer = 2*Math.PI*radius;
-        System.out.println("The circumference is " + String.format("%.2f", circumferenceComputer) + "\n");
+        System.out.println("The circumference is " + String.format("%.3f", circumferenceComputer) + "\n");
     }
     public static void main(String[] args){
         double newRadius = 0;        
