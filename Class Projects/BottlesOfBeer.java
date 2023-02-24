@@ -26,6 +26,7 @@ public class BottlesOfBeer {
             } else if (save == 1 ){
             System.out.println("Go to the store, buy some more " + save + " bottle of beer on the wall.");  
             }
+            input.close();
         }
     }
 }

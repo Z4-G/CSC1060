@@ -2,7 +2,7 @@ import java.util.Scanner;
 public class TrianglePrinter{
     public static void main(String[] args){
         int triangleSize = 0;
-        var fill ="";
+        String fill ="";
         Scanner triangles = new Scanner(System.in);
         //variables and scanner
 

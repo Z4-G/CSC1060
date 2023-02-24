@@ -2,9 +2,9 @@ import java.util.Scanner;
 public class InteractiveGreeter {
     public static void main(String[] arg){
 
-        var name = "";
-        var location = "";
-        var activity = "";
+        String name = "";
+        String location = "";
+        String activity = "";
         double donation = 0;
         int age = 0;
 
