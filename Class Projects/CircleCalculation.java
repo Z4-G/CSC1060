@@ -3,18 +3,22 @@ public class CircleCalculation {
     int area = 0;
     double radius = 0;
     int length = 0;
-    public static void area(double radius){
-        double areaComputed =  radius*radius*Math.PI;
-        System.out.println("\nThe area is " + String.format("%.3f", areaComputed));
+    static double areaComputed;
+    static double diameterComputed;
+    static double circumferenceComputer;
+
+    public static double area(double radius){
+        areaComputed =  radius*radius*Math.PI;
+        return areaComputed;
     }
 
-    public static void diameter(double radius){
-        double diameterComputed = 2*radius;
-        System.out.println("The diameter is " + String.format("%.3f", diameterComputed));
+    public static double diameter(double radius){
+        diameterComputed = 2*radius;
+        return diameterComputed;
     }
-    public static void circumference(double radius){
-        double circumferenceComputer = 2*Math.PI*radius;
-        System.out.println("The circumference is " + String.format("%.3f", circumferenceComputer) + "\n");
+    public static double circumference(double radius){
+        circumferenceComputer = 2*Math.PI*radius;
+        return circumferenceComputer;
     }
     public static void main(String[] args){
         double newRadius = 0;        
@@ -24,8 +28,11 @@ public class CircleCalculation {
         //prompts user input for radius
 
         area(newRadius);
+        System.out.println("\nThe area is " + String.format("%.2f", areaComputed));
         diameter(newRadius);
+        System.out.println("The diameter is " + String.format("%.2f", diameterComputed));
         circumference(newRadius);
+        System.out.println("The circumference is " + String.format("%.2f", circumferenceComputer) + "\n");
         circleInput.close();
     }
 }

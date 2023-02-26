@@ -1,13 +1,13 @@
 package exam_1;
 
 public class TenMaker{
-    static boolean check = true;
+     static boolean check = true;
     public static void makes10(int unit1, int unit2){
-     if (unit1 + unit2 == 10){
-         check = true;
-     } else {
-         check = false;
-     }
+        if (unit1 + unit2 == 10){
+            check = true;
+        } else {
+            check = false;
+        }
     }
     public static void main(String[] args){
         makes10(5,5);
