@@ -1,4 +1,4 @@
-package PracticeMarchTen;
+package CourseLists;
 
 public class Driver {
     public static void main(String[] args){
@@ -14,6 +14,8 @@ public class Driver {
         for (int i = 0; i<6; i++){
             System.out.println(courseList[i]);
         }
+        StudentList jeremy = new StudentList("Jeremy Zeigler", 123456, 22);
+        System.out.println(jeremy.getStudent());
     }
     
 }

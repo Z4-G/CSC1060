@@ -1,10 +1,11 @@
-package PracticeMarchTen;
+package CourseLists;
 
     public class Course{
         private int courseNumber;
         private int numStudents;
         private int maxStudents;
         private int credits;
+        
 
         public Course(){
             this.courseNumber = 3201;
@@ -42,10 +43,8 @@ package PracticeMarchTen;
         public void setNumStudents(int numStudents) {
             this.numStudents = numStudents;
         }
-
-        /*public String toString() {
-            return ("This Course (#" + courseNumber +  ") is worth " + this.credits + " credits. Currently there are " + numStudents + " students enrolled. The maximum class size is " + maxStudents + ".");
-            
-        }*/
+        public String toString(){
+            return courseNumber +" "+  numStudents + " " + maxStudents + " " +  credits; 
+        }
     }
     
