@@ -1,6 +1,5 @@
-import java.util.Scanner; 
-import java.util.Arrays;
-public class ArrayTraversal2 {
+import java.util.Scanner;
+public class ArrayReversal {
     public static void main(String[] args){
         int[] holder = new int[100];
         int input = 0;
