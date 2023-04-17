@@ -1,4 +1,4 @@
-package CourseLists;
+package CoursesCheckList;
 
     public class Course{
         private int courseNumber;
@@ -44,7 +44,9 @@ package CourseLists;
             this.numStudents = numStudents;
         }
         public String toString(){
-            return courseNumber +" "+  numStudents + " " + maxStudents + " " +  credits; 
+            return String.format("Course Number: %s \nEnrolled students: %s \nMax Students: %s \nCredit Hours: %s", courseNumber,  numStudents, maxStudents, credits); 
         }
     }
-    
+
+
+
