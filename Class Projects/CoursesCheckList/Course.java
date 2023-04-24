@@ -8,16 +8,16 @@ package CoursesCheckList;
         
 
         public Course(){
-            this.courseNumber = 3201;
+            this.courseNumber = 0;
             this.numStudents = 0;
-            this.maxStudents = 15;
-            this.credits = 3;
+            this.maxStudents = 0;
+            this.credits = 0;
         }
-        public Course(int courseNumber, int numStudents, int maxStudents, int Credits){
+        public Course(int courseNumber, int numStudents, int maxStudents, int credits){
             this.courseNumber = courseNumber;
             this.numStudents = numStudents;
             this.maxStudents = maxStudents;
-            this.credits = Credits;
+            this.credits = credits;
         }
         public int getCourseNumber() {
             return courseNumber;
@@ -34,8 +34,8 @@ package CoursesCheckList;
         public void setCourseNumber(int courseNumber) {
             this.courseNumber = courseNumber;
         }
-        public void setCredits(int Credits) {
-            this.credits = Credits;
+        public void setCredits(int credits) {
+            this.credits = credits;
         }
         public void setMaxStudents(int maxStudents) {
             this.maxStudents = maxStudents;
