@@ -67,9 +67,9 @@ public class CSclasses {
             System.out.println("\nWould you like to add another class?");
             repeater = input.nextLine().toLowerCase();
         }
-
+        
         for (Course i : courseList){
-            System.out.println(i + "\n");
+            i.writeToFile();
         }
 
         input.close();

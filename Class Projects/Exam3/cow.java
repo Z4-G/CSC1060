@@ -13,7 +13,7 @@ public class cow extends Animal{
     public String sing(){
         return super.sing();
     }
-        public String toString(){
+    public String toString(){
         return String.format("Cow: Weight: %s Color: %s Sound: %s", weight, color, sound);
     }
 }

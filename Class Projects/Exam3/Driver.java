@@ -29,7 +29,5 @@ public class Driver {
                 System.out.println(a.sing());
             }
         }
-        
-
     }
 }
