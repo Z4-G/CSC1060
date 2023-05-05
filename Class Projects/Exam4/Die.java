@@ -1,7 +1,7 @@
 package Exam4;
 import java.util.Random;
 
-public class Die extends Player{
+public class Die{
     private int numSides;
     private int value;
 
