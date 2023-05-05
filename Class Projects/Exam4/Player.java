@@ -6,8 +6,8 @@ public class Player {
     private int roll;
 
     public Player(){
-        this.name = "";
         this.gameDie = null;
+        this.name = "";
     }
 
     public String getName() {
