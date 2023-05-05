@@ -32,6 +32,7 @@ public class Die extends Player{
 
     //methods 
     
+    //produces a random int
     public int roll(){
         Random rollValue = new Random();
         value = rollValue.nextInt(numSides);
