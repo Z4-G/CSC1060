@@ -9,7 +9,10 @@ public class Player {
         this.gameDie = null;
         this.name = "";
     }
-
+    public Player(String name, Die gameDie){
+        this.gameDie = gameDie;
+        this.name = name;
+    }
     public String getName() {
         return this.name;
     }

@@ -8,25 +8,30 @@ public class DiceGame {
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
         File log = new File("log.txt");
-        Die test = new Die();
+        int sides = 0;
         Player[] allPlayers;
+        Die[] playerDie;
         int counter = 0;
         int holder;
 
         //sets die sides and number of players
         System.out.println("How many sides does your die have?");
-        test.setNumSides(input.nextInt());
+        sides = input.nextInt();
         System.out.println("How many players are there?");
         holder = input.nextInt();
 
         //player array intiialized
         allPlayers = new Player[holder];
+        playerDie = new Die[holder];
 
         //adds player objects to the array
         for (Player i: allPlayers){
             Player newPlayer = new Player();
-            allPlayers[counter] = newPlayer;
+            Die newDie = new Die(sides);
+            allPlayers[counter] = newPlayer.setGameDie(newDie);
+            
             counter++;
+
         }
         //sets the name for each player
         for (Player i: allPlayers){
@@ -61,7 +66,7 @@ public class DiceGame {
     public static String decideWinner(Player[] playerArray){
         int highestValue = 0;
         String winner = "";
-        
+
         //checks for the highest roll
         for (Player i: playerArray){
             if (i.getRoll() > highestValue){
